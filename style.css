@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    height: 80px;
+    background-color: #dfe92a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+#navbar ul{
+    list-style-type: none;
+}
+
+#navbar ul li{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: orange;
+    padding: 7px 18px;
+    border-radius: 5px;
+}
