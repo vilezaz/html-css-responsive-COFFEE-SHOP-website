@@ -78,21 +78,23 @@
     object-fit: contain;
 }
 
-#coffees{
+#coffees {
     background-color: lightgray;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
     justify-content: space-evenly;
-    flex-wrap: wrap;
     padding: 50px 0;
+    gap: 50px 0;
 }
 
-.coffee{
-    background-color: aqua;
-    width: 220px;
-    margin: 70px 0;
-    height: 45vh;
-    margin: 50px 50px;
+.coffee {
+    margin: 50px 0;
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/back4.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
 
 .coffee-img{
     height: 50%;
@@ -108,11 +110,12 @@
 }
 
 .coffee-text{
-    background-color: lightsalmon;
+    /* background-color: lightsalmon; */
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
+    color : #fff;
 }
