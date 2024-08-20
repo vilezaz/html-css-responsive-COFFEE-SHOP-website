@@ -221,8 +221,6 @@
     width: 100%;
     margin: 5px auto;
     background-color: blueviolet;
-    
-    
 }
 
 .beans-img img{
@@ -241,4 +239,32 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
+}
+
+#footer{
+    display: flex;
+    background-image: linear-gradient(rgb(0,0,0 , 0.5), rgb(0,0,0, 0.5)), url(./images/Coffee_Beans_Footer1.png);
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footer #privacy, #footer #about-us, #footer #info, #footer #contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer #privacy h4, #footer #about-us h4, #footer #info h4, #footer #contact h4{
+    font-size: 20px;
+}
+
+#footer #contact #contact-icons{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
 }
