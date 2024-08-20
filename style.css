@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -14,6 +17,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 #header {
@@ -35,18 +39,30 @@ body {
 #navbar ul li {
   display: inline-block;
   margin-right: 10px;
-  background-color: #D8CAB8;
+  background-color: #d8cab8;
   padding: 7px 18px;
   border-radius: 5px;
   border: 1px solid transparent;
   cursor: pointer;
   transition: all 0.3s;
 }
+#navbar ul li a{
+  color: #3d180d;
+  text-decoration: none;
+}
 
-#navbar ul li:hover{
-    background-color: transparent;
-    border: 1px solid #3D180D;
-    color: #3D180D;
+#navbar ul li:hover {
+  background-color: transparent;
+  border: 1px solid #3d180d;
+  color: #3d180d;
+}
+
+h2 {
+  text-align: center;
+  margin: 100px 0 20px 0;
+  font-size: 35px;
+  color: #3d180d;
+  text-decoration: underline;
 }
 
 #hero-div {
@@ -74,7 +90,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 15px;
-  color: #3D180D;
+  color: #3d180d;
 }
 
 #hero-left-img {
@@ -97,20 +113,19 @@ body {
   border-radius: 5px;
   outline: none;
   background-color: transparent;
-  border: 1px solid #3D180D;
+  border: 1px solid #3d180d;
   cursor: pointer;
-  color: #3D180D;
+  color: #3d180d;
 }
 
 #hero-left button:hover {
-  background-color: #3D180D;
+  background-color: #3d180d;
   color: #fff;
   transition: color 0.3s;
 }
 
 #hero-right {
   width: 50%;
-  /* background-color: blueviolet; */
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -131,45 +146,57 @@ body {
 }
 
 #coffees {
-  background-color: lightgray;
   display: grid;
   grid-template-columns: repeat(3, 200px);
   justify-content: space-evenly;
-  padding: 50px 0;
+  padding: 20px 0;
   gap: 50px 0;
 }
 
 .coffee {
   margin: 50px 0;
-  height: 40vh;
+  height: 220px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(./images/back4.jpg);
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
+  transition: transform 0.25s linear;
+}
+
+.coffee:hover {
+  transform: translateY(-7px);
 }
 
 .coffee-img {
   height: 50%;
   width: 100%;
-  position: relative;
-  top: -15%;
 }
 
 .coffee-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  position: relative;
+  top: -40%;
 }
 
 .coffee-text {
-  /* background-color: lightsalmon; */
   height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10px;
-  color: #fff;
+  gap: 5px;
+  color: #d3d3d3;
+}
+
+.coffee-text h3 {
+  font-size: 18px;
+}
+
+.coffee-text p {
+  font-size: 13px;
 }
 
 #about {
@@ -177,9 +204,9 @@ body {
   justify-content: space-evenly;
   align-items: center;
   height: 70vh;
-  padding: 50px 0;
+  padding: 30px 0;
+  margin: 40px 0;
   gap: 50px 0;
-  background-color: rgb(142, 89, 89);
 }
 
 #about-left {
@@ -193,7 +220,6 @@ body {
 #about-left-img {
   height: 100%;
   width: 100%;
-  background-color: green;
 }
 
 #about-left-img img {
@@ -208,11 +234,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 30px;
+  padding: 10px 70px;
+  text-align: justify;
+  color: #3d180d;
 }
 
 #cold-coffees {
-  background-color: greenyellow;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -220,21 +247,24 @@ body {
 }
 
 .cold-coffee {
-  width: 250px;
-  height: 50vh;
-  background-color: red;
+  width: 220px;
+  height: 260px;
+  background-color: #d8cab8;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px 0;
 }
 
 .cold-coffee-img {
   height: 80%;
   width: 95%;
-  padding: 15px;
+  padding: 25px;
   margin: 5px auto;
-  background-color: blueviolet;
+  background-color: #ac7d5f;
 }
 
 .cold-coffee-img img {
@@ -249,11 +279,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #d8cab8;
+  color: #3d180d;
 }
 
 #beans {
-  background-color: rgb(130, 156, 92);
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -261,39 +291,42 @@ body {
 }
 
 .beans {
-  width: 230px;
-  height: 40vh;
-  background-color: red;
+  width: 220px;
+  height: 220px;
+  background-color: #9f8a81;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin: 30px 0;
+  color: #3d180d;
 }
 
 .beans-img {
-  height: 70%;
+  height: 65%;
   width: 100%;
   margin: 5px auto;
-  background-color: blueviolet;
 }
 
 .beans-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  scale: 150%;
+  scale: 190%;
   position: relative;
-  top: -50%;
+  top: -40%;
 }
 
 .beans-text {
-  height: 30%;
+  height: 35%;
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 5px;
+  flex-direction: column;
   align-items: center;
-  background-color: #fff;
 }
 
 #footer {
@@ -301,12 +334,13 @@ body {
   background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
     url(./images/Coffee_Beans_Footer1.png);
   justify-content: space-around;
-  align-items: center;
   padding: 60px 0;
-  color: #fff;
+  color: #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 #footer #privacy,
@@ -322,11 +356,24 @@ body {
 #footer #about-us h4,
 #footer #info h4,
 #footer #contact h4 {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+#footer #privacy p,
+#footer #about-us p,
+#footer #info p,
+#footer #contact p {
+  font-size: 14px;
 }
 
 #footer #contact #contact-icons {
   display: flex;
   gap: 10px;
-  font-size: 25px;
+  font-size: 27px;
+  color: #ac7d5f;
+}
+
+#footer #contact #contact-icons i:hover {
+  color: #d38a5d;
+  cursor: pointer;
 }
