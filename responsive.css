@@ -1,3 +1,17 @@
+@media screen and (max-width: 1000px) {
+  #hero-div {
+    height: 60vh;
+    margin: 50px 0;
+  }
+  #hero-left {
+    width: 60%;
+    padding: 40px;
+  }
+  #hero-left-text h1{
+    font-size: 40px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #hero-div {
     height: 60vh;
@@ -11,6 +25,10 @@
 
   #hero-left-text {
     gap: 5px;
+  }
+
+  #hero-left-text h1{
+    font-size: 35px !important;
   }
 
   #hero-left-img {
@@ -50,12 +68,28 @@
     margin: 60px 0;
   }
 
+  #hero-div button{
+    padding: 6px 10px;
+  }
+
+  #hero-div h1{
+    font-size: 30px;
+  }
+
+  #hero-left-text h1{
+    font-size: 32px !important;
+  }
+
   #about {
     flex-direction: column;
     height: auto;
     margin: 0;
   }
 
+  #about-left {
+    width: 90%;
+    padding: 80px 80px 0 80px;
+  }
   #about-right {
     width: 90%;
   }
@@ -67,21 +101,37 @@
     color: #3d180d;
     text-decoration: underline;
   }
+
+  .coffee {
+    margin: 20px 0;
+  }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 550px) {
+  
   #header {
     padding: 20px 5px;
   }
-
+  #hero-div {
+    margin: 20px 0;
+  }
   #header img {
     width: 50px;
   }
+  #hero-left-img{
+    display: none;
+  }
+
+  
 
   #navbar ul li {
     margin-right: 2px;
-    padding: 2px 4px;
+    padding: 4px 4px;
     font-size: 13px;
+  }
+
+  h2{
+    margin: 30px 0 0 0;
   }
   #hero-div {
     flex-direction: column;
@@ -95,12 +145,16 @@
     gap: 20px;
   }
   #hero-right {
-    width: 70%;
+    width: 60%;
+  }
+
+  .coffee {
+    margin: 15px 0;
   }
 }
 
 @media screen and (max-width: 500px) {
   #coffees {
-    grid-template-columns: repeat(1, 200px);
+    grid-template-columns: 220px;
   }
 }
