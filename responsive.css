@@ -17,33 +17,26 @@
     height: 60vh;
     margin: 30px 0;
   }
-
   #hero-left {
     width: 60%;
     padding: 20px;
   }
-
   #hero-left-text {
     gap: 5px;
   }
-
   #hero-left-text h1{
     font-size: 35px !important;
   }
-
   #hero-left-img {
     height: 50%;
     width: 100%;
   }
-
   #hero-left h1 {
     font-size: 35px;
   }
-
   #hero-right {
     width: 40%;
   }
-
   #coffees {
     display: grid;
     grid-template-columns: repeat(2, 200px);
@@ -52,7 +45,6 @@
     padding: 30px 0;
     gap: 10px 0;
   }
-
   #about-right {
     width: 55%;
     padding: 10px 20px;
@@ -63,29 +55,28 @@
   #header {
     padding: 20px 10px;
   }
+  #navbar ul li a {
+    font-size: 15px;
+    font-weight: 400;
+  }
   #hero-div {
     height: 60vh;
     margin: 60px 0;
   }
-
   #hero-div button{
     padding: 6px 10px;
   }
-
   #hero-div h1{
     font-size: 30px;
   }
-
   #hero-left-text h1{
     font-size: 32px !important;
   }
-
   #about {
     flex-direction: column;
     height: auto;
     margin: 0;
   }
-
   #about-left {
     width: 90%;
     padding: 80px 80px 0 80px;
@@ -93,7 +84,6 @@
   #about-right {
     width: 90%;
   }
-
   h2 {
     text-align: center;
     margin: 50px 0 10px 0;
@@ -101,7 +91,6 @@
     color: #3d180d;
     text-decoration: underline;
   }
-
   .coffee {
     margin: 20px 0;
   }
@@ -121,13 +110,11 @@
   #hero-left-img{
     display: none;
   }
-
   #navbar ul li {
     margin-right: 2px;
     padding: 4px 4px;
     font-size: 13px;
   }
-
   h2{
     margin: 30px 0 0 0;
   }
@@ -145,9 +132,11 @@
   #hero-right {
     width: 70%;
   }
-
   .coffee {
     margin: 15px 0;
+  }
+  #about-right{
+    font-size: 16px;
   }
 }
 
